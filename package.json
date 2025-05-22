@@ -1,0 +1,23 @@
+{
+	"name": "sass_live_streaming",
+	"version": "1.0.0",
+	"description": "Landing page",
+	"source": "index.html",
+	"scripts": {
+		"sass:watch": "sass --style=expanded --watch styles:dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Nick19571101/sass_live_streaming.git"
+	},
+	"author": "Nick",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Nick19571101/sass_live_streaming/issues"
+	},
+	"homepage": "https://github.com/Nick19571101/sass_live_streaming#readme",
+	"devDependencies": {
+		"parsel": "^0.3.0",
+		"sass": "^1.89.0"
+	}
+}
