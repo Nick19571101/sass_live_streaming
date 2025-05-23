@@ -1,0 +1,20 @@
+@use 'variables' as v;
+
+%hover-grey {
+	&:hover {
+		cursor: pointer;
+		color: v.$color_grey;
+	}
+}
+%hover-green {
+	&:hover {
+		cursor: pointer;
+		color: v.$color_green;
+	}
+}
+%hover-green-icon {
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.1);
+	}
+}

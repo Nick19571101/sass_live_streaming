@@ -1,0 +1,89 @@
+@use 'variables' as v;
+@use 'sass:color';
+@use 'mixins' as m;
+@use 'placeholders';
+.header {
+	height: 3.25rem;
+	background-color: color.adjust(v.$color_white, $alpha: -0.88);
+	border: {
+		bottom: {
+			width: 1px;
+			style: solid;
+			color: v.$color_white;
+		}
+	}
+	&__nav {
+	}
+}
+.nav-header {
+	height: 3.25rem;
+	// display: flex;
+	// justify-content: start;
+	// align-items: center;
+	@include m.d-flex(start, center);
+	&__title {
+		height: 3.25rem;
+		width: 250px;
+		border-right: 2px solid v.$color_white;
+		@include m.d-flex(center, center);
+	}
+	&__title-link {
+		font-weight: 500;
+		font-size: 1.56rem;
+		line-height: 1.2;
+		color: v.$color_white;
+		transition: color 0.52s ease;
+		@extend %hover-grey;
+	}
+	&__title-link span {
+		font-weight: 700;
+	}
+	&__links {
+		flex-grow: 1;
+	}
+	&__links-list {
+	}
+	&__covid-wrapper {
+	}
+	&__globe-wrapper {
+	}
+}
+.list {
+	@include m.d-flex(start, center, nowrap, row, min(70px, 2vw));
+	padding-inline-start: min(70px, 2vw);
+	&__item {
+	}
+	&__item-link {
+		font-size: 1.375rem;
+		line-height: 1.36;
+		color: v.$color_white;
+		white-space: nowrap;
+		transition: color 0.52s ease;
+		@extend %hover-green;
+	}
+}
+.covid {
+	height: 100%;
+	@include m.d-flex(center, center);
+	padding-inline: 2rem;
+	border: {
+		left: 1px solid v.$color_white;
+		right: 1px solid v.$color_white;
+	}
+	&__link {
+		font-weight: 700;
+		color: v.$color_white;
+		line-height: 1.36;
+		white-space: nowrap;
+		transition: color 0.52s ease;
+		@extend %hover-green;
+	}
+}
+.globe {
+	width: 5rem;
+	@include m.d-flex(start, center);
+	&__link {
+		transition: color 0.52s ease;
+		@extend %hover-green-icon;
+	}
+}
