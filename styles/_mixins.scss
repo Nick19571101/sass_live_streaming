@@ -14,3 +14,18 @@
 	column-gap: $column-gap;
 	row-gap: $row-gap;
 }
+@mixin font(
+	$size: 16,
+	$weight: 400,
+	$color: #fff,
+	$style: normal,
+	$height: line-height
+) {
+	font: {
+		size: $size;
+		weight: $weight;
+		style: $style;
+	}
+	color: $color;
+	line-height: $height;
+}
