@@ -78,7 +78,8 @@
 	}
 	&__notify {
 		position: relative;
-		margin-block: min(10.625rem, 7vw);
+		margin-block-start: min(10.625rem, 12vw);
+		margin-block-end: min(2rem, 6vw);
 		margin-inline: auto;
 		width: 680px;
 		height: 3.75rem;

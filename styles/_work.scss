@@ -1,0 +1,74 @@
+@use 'variables' as v;
+@use 'sass:color';
+@use 'mixins' as m;
+@use 'placeholders';
+
+.work-section {
+	padding: 160px 20px;
+	.work {
+		margin-inline: auto;
+		text-align: center;
+		&__title {
+			margin-block-end: min(5rem, 5vw);
+			@include m.font(min(60px, 8vw), 400, v.$color_white);
+			@media (max-width: 460px) {
+				display: none;
+			}
+		}
+		&__cards-wrapper {
+			margin-inline: auto;
+			max-width: 60rem;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			row-gap: 3.5rem;
+			place-items: center;
+			grid-template-areas:
+				'analysis design develop'
+				'mainten test integrat';
+			@media (max-width: 460px) {
+				column-gap: 1rem;
+				row-gap: 2rem;
+				margin-block-start: 3rem;
+			}
+			.card--analysis {
+				grid-area: analysis;
+				justify-self: start;
+			}
+			.card--design {
+				grid-area: design;
+			}
+			.card--develop {
+				grid-area: develop;
+				justify-self: end;
+			}
+			.card--mainten {
+				grid-area: mainten;
+				justify-self: start;
+			}
+			.card--test {
+				grid-area: test;
+			}
+			.card--integrat {
+				grid-area: integrat;
+				justify-self: end;
+			}
+			@media (max-width: 768px) {
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(3, 1fr);
+				grid-template-areas:
+					'analysis design'
+					'develop mainten'
+					'test integrat';
+				.card--analysis,
+				.card--design,
+				.card--develop,
+				.card--mainten,
+				.card--test,
+				.card--integrat {
+					justify-self: center;
+				}
+			}
+		}
+	}
+}
