@@ -51,8 +51,6 @@
 .list {
 	@include m.d-flex(start, center, nowrap, row, min(70px, 2vw));
 	padding-inline-start: min(70px, 2vw);
-	&__item {
-	}
 	&__item-link {
 		font-size: 1.375rem;
 		line-height: 1.36;

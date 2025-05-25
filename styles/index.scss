@@ -1,5 +1,6 @@
 @use 'variables' as v;
 @use 'importer';
+@use 'hero';
 
 body {
 	background-color: v.$color_blue;
