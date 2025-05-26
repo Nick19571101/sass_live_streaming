@@ -12,8 +12,6 @@
 			color: v.$color_white;
 		}
 	}
-	&__nav {
-	}
 }
 .nav-header {
 	height: 3.25rem;
@@ -40,12 +38,9 @@
 	}
 	&__links {
 		flex-grow: 1;
-	}
-	&__links-list {
-	}
-	&__covid-wrapper {
-	}
-	&__globe-wrapper {
+		@media (max-width: 768px) {
+			display: none;
+		}
 	}
 }
 .list {
@@ -68,6 +63,9 @@
 		left: 1px solid v.$color_white;
 		right: 1px solid v.$color_white;
 	}
+	@media (max-width: 768px) {
+		display: none;
+	}
 	&__link {
 		font-weight: 700;
 		color: v.$color_white;
@@ -80,8 +78,36 @@
 .globe {
 	width: 5rem;
 	@include m.d-flex(start, center);
+	@media (max-width: 768px) {
+		display: none;
+	}
 	&__link {
 		transition: color 0.52s ease;
 		@extend %hover-green-icon;
+	}
+}
+
+.mobile-navigation {
+	display: none;
+	@media (max-width: 768px) {
+		display: block;
+	}
+}
+.mobile-navigation {
+	&__burger {
+	}
+	&__toggler {
+	}
+	&__menu {
+	}
+	&__close {
+	}
+}
+.nav {
+	&__list {
+	}
+	&__list-item {
+	}
+	&__link {
 	}
 }

@@ -35,6 +35,28 @@
 			</nav>
 		</div>
 	</header>
+
+	<div class="mobile-navigation">
+		<label for="checkboxID" aria-label="open-close mobile menu">
+			<div class="mobile-navigation__burger">
+				<img src="./assets/icon-svg/menu.svg" alt="burger-menu" width="24px">
+			</div>
+		</label>
+		<input type="checkbox" name="toggler" id="checkboxID" class="mobile-navigation__toggler">
+
+		<nav class="mobile-navigation__menu nav">
+			<ul class="nav__list">
+				<li class="nav__list-item"><a href="#about-id" class="nav__link">About us</a></li>
+				<li class="nav__list-item"><a href="#success-id" class="nav__link">Contact</a></li>
+			</ul>
+			<label for="menu-toggler-id" aria-label="open-close mobile menu">
+				<div class="mobile-navigation__close">
+					<img src="./assets/icon-svg/close.svg" alt="close-icon" width="24px">
+				</div>
+			</label>
+		</nav>
+	</div>
+
 	<main aria-label="main content">
 		<div class="hero-section" aria-label="hero section">
 			<div class="container">
