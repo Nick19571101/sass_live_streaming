@@ -36,19 +36,23 @@
 		</div>
 	</header>
 
-	<div class="mobile-navigation">
-		<label for="checkboxID" aria-label="open-close mobile menu" class="mobile-navigation__burger">
-			<img src="./assets/icon-svg/menu.svg" alt="burger-menu" class="mobile-navigation__burger-icon">
+	<div class="mob-navigation" aria-label="mobile navigation">
+		<label for="menu-toggler-id" aria-label="open-close mobile menu">
+			<div class="mob-navigation__burger">
+				<img src="./assets/icon-svg/menu.svg" alt="burger-menu" width="24px">
+			</div>
 		</label>
-		<input type="checkbox" name="toggler" id="checkboxID" class="mobile-navigation__toggler">
+		<input type="checkbox" name="toggler" id="menu-toggler-id" class="mob-navigation__toggler">
 
-		<nav class="mobile-navigation__menu nav">
-			<ul class="nav__list">
-				<li class="nav__list-item"><a href="#about-id" class="nav__link">About us</a></li>
-				<li class="nav__list-item"><a href="#success-id" class="nav__link">Contact</a></li>
+		<nav class="mob-navigation__nav">
+			<ul class="mob-navigation__list">
+				<li class="mob-navigation__item"><a href="#about-id" class="mob-navigation__link">About us</a></li>
+				<li class="mob-navigation__item"><a href="#success-id" class="mob-navigation__link">Contacts</a></li>
 			</ul>
-			<label for="menu-toggler-id" aria-label="open-close mobile menu" class="mobile-navigation__close">
-				<img src="./assets/icon-svg/close.svg" alt="close-icon" class="mobile-navigation__close-icon">
+			<label for="menu-toggler-id" aria-label="open-close mobile menu">
+				<div class="mob-navigation__close">
+					<img src="./assets/icon-svg/close.svg" alt="close-icon" width="24px">
+				</div>
 			</label>
 		</nav>
 	</div>
