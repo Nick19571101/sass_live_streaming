@@ -3,7 +3,7 @@
 	$align-items: center,
 	$wrap: nowrap,
 	$direction: row,
-	$column-gap: 1rem,
+	$column-gap: 0,
 	$row-gap: 0
 ) {
 	display: flex;
